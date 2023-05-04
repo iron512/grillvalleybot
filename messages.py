@@ -1,0 +1,9 @@
+import telebot.formatting as frm
+
+en = {}
+it = {}
+
+# Welcome message
+en['welcome_message'] = f"A very warm welcome, {'{}'} {'{}'}!\n\nI'm the {frm.hbold('Grill Valley bot')} 🤖 and I'm pleased to see you here. Hope you will stick around a {frm.hitalic('bit')} 😄.\n\nFirst of all.. {frm.hbold('Do you know Grill Valley?')}\n🔴 If not, here it is the {frm.hlink('aftermovie', 'https://youtu.be/1bTJatSOQb8')} of some event in a galaxy far, far away..\n🟢 If so, maybe you want to watch it for a blast from the past...\n\n\nMore specifically, it's a BBQ party 🔥 organized from and for {frm.hitalic('Computer Science students')} 💻.\nStill, anyone is always welcome. The final goal is a comfort place to eat 🍔, drink 🍻 and enjoy the life ☀️ together.\n\nIn the past we held Grill Valley 0, Grill Valley 1, Grill Valley 2 and Grill Valley Returns 🦇. Brace yourself, because in may 🗓️, the saga will continue with...\n\n\n {frm.hspoiler('Grill Valley 100')}"
+
+it['welcome_message'] = f"Un caldo benvenuto, {'{}'} {'{}'}!\n\nSono il {frm.hbold('Grill Valley bot')} 🤖 e sono davvero felice di vederti qui. Spero che tu rimanga per un po' 😄.\n\nPrima di tutto.. {frm.hbold('Conosci Grill Valley?')}\n🔴 Se la risposta è no, qui trovi l'{frm.hlink('aftermovie', 'https://youtu.be/1bTJatSOQb8')} di un evento in una galassia lontana lontana\n🟢 Se la risposta è si, magari vuoi rivederlo per un tuffo nel passato...\n\n\nPiù nello specifico, si tratta di una grigliata 🔥, organizzata da e per gli {frm.hitalic('studenti di informatica')} 💻.\nIn ogni caso, tutti sono sempre benvenuti. L'obiettivo finale è un posto tranquillo, dove mangiare 🍔, bere 🍻 e godersi la vita ☀️ assieme.\n\nIn passato abbiamo organizzato Grill Valley 0, Grill Valley 1, Grill Valley 2 e Grill Valley Returns 🦇. Preparati, perchè a maggio 🗓️, la saga continua con...\n\n\n {frm.hspoiler('Grill Valley 100')}"

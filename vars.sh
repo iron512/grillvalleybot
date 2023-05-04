@@ -1,0 +1,1 @@
+export BOT_TOKEN=5373482596:AAHYhmFwaeqBn6_HDGOyl_XqEk8BmSFnyXg
