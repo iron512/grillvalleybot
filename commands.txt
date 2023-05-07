@@ -1,0 +1,4 @@
+start - Start the bot. Welcome to Grill Valley.
+subscribe - Register to the grill valley next event.
+withdraw - Withdraw your subscription, if it exists.
+status - Discover your status.
