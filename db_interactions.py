@@ -116,6 +116,36 @@ def withdraw_user(conn:any, user: str):
         return False
 
 
+# Handle eating preferences
+def update_eating(conn:any, user: str, preference: str):
+    update_eat = "UPDATE bot.subscriptions SET eats = %s WHERE username = %s;"
+
+    if check_if_user_exists_and_valid(conn, user):
+        # user exist 
+        return __execute_mutation(conn, update_eat, [preference, user])
+    else:
+        return False
+
+def edit_food_intolerances(conn: any, user: str, allergies: str):
+    update = "UPDATE bot.subscriptions SET intolerances = %s WHERE username = %s;"
+
+    if check_if_user_exists_and_valid(conn, user):
+        # user exist (it must have withdrawn some time ago)
+        return __execute_mutation(conn, update, [allergies, user])
+    else:
+        # user is a new one
+        return False
+
+
+def get_food_preferences(conn: any, user: str):
+    select = "SELECT eats FROM bot.subscriptions WHERE username = %s;"
+
+    if check_if_user_exists_and_valid(conn, user):
+        # user exist (it must have withdrawn some time ago)
+        return __execute_query_single(conn, select, [user])
+    else:
+        # user is a new oneupdate
+        return False
 
 # Manage the user direct input
 def __wait_for_user_input(conn: any, user: str, input: str):
